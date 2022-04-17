@@ -5,6 +5,9 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import GoogleLogin from '../GoogleLogin/GoogleLogin';
+import { ToastContainer, toast } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
         const emailRef = useRef('');
@@ -38,7 +41,7 @@ const Login = () => {
           const resetPassword = async() =>{
                 const email = emailRef.current.value;
                 await sendPasswordResetEmail(email);
-                alert('Sent email');
+                toast('Sent email');
           }
 
         const navigateToRegister = event => {
@@ -76,10 +79,10 @@ const Login = () => {
         {errorMessage}
 
 <p>New to Here? <Link to="/register" className='text-danger pe-auto text-decoration-none' onClick={navigateToRegister}>Please Register</Link> </p>
-<p>Forget password? <Link to="/register" className='text-success pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</Link> </p> 
+<p>Forget password? <button  className=' btn btn-link text-success pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button> </p> 
                 <GoogleLogin></GoogleLogin>
- 
-               
+
+                <ToastContainer />
 
  </div>
         );
