@@ -4,7 +4,7 @@ const Checkout = () => {
         
         return (
                 <div>
-                        <h2>this is checkout</h2>               
+                        <h2 className='text-center text-success mt-5 '>This is checkout</h2>               
                         
                  </div>
         );

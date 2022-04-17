@@ -13,14 +13,12 @@ let errorMessage ;
        errorMessage =   
         <div>
             <p className='text-danger'>Error: {error.message}</p>
-        </div>
-     
+        </div> 
       }
 
       if(user){
               navigate('/home') ;
-      }
-      
+      }  
         return (
                <div>
                 <div className='d-flex align-items-center'>
