@@ -7,13 +7,13 @@ import auth from '../../../firebase.init';
 
 const Register = () => {
         const navigate = useNavigate() ;
-
+        let errorMessage;
         const [
                 createUserWithEmailAndPassword,
                 user,
                 loading,
                 error,
-              ] = useCreateUserWithEmailAndPassword(auth);
+              ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification:true});
 
 
         const navigateToLogin = event => {
@@ -23,6 +23,11 @@ const Register = () => {
          if(user){
                  navigate('/home') ;
          }
+
+         if (error) {
+          errorMessage = <p className='text-danger'>Error: {error?.message}</p>
+      }
+
 
         const handleRegister = event => {
                 event.preventDefault() ;
@@ -52,10 +57,11 @@ const Register = () => {
   <Form.Group className="mb-3" controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
-  <Button variant="success" type="submit">
+  <Button className='mb-3' variant="success" type="submit">
     Register
   </Button>
 </Form>
+{errorMessage}
 <p>Already have an account? <Link to="/login" className='text-danger pe-auto text-decoration-none' onClick={navigateToLogin}>Please Login</Link> </p> 
                 </div>
         );
