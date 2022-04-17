@@ -5,7 +5,7 @@ const Footer = () => {
         const year = today.getFullYear()
         return (
                 <div>
-                        <p className='text-center text-seconday mt-3'> @copyright.All the reserved gym with jhon {year} </p>
+                        <p className='text-center text-seconday mt-3'> @Copyright.All the reserved gym with Adams {year} </p>
                 </div>
         );
 };

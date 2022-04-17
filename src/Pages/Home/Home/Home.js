@@ -5,7 +5,7 @@ import Services from '../Services/Services'
 const Home = () => {
         return (
                 <div>
-                        <h1 className='text-center my-5'>Make Body Strong With Mr.Adams</h1>
+                        <h1 className='text-center my-5'>Make Body Strong With <span className='text-danger'>Mr.Adams</span></h1>
                         <Banner></Banner>
                         <Services></Services>
                 </div>
