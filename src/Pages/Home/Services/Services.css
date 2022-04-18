@@ -5,7 +5,8 @@
         padding-bottom: 30px;
     }
     
-    /* make services responsive */
+    /*   responsive services */
+
     @media only screen and (max-width:576px) {
         .services-container{
             grid-template-columns: repeat(1, 1fr);

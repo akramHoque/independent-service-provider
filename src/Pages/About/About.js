@@ -9,7 +9,7 @@ const About = () => {
 
                         <p className='text-semibold text-center justify-content-center'>
 
-                        Hi there! I am Md.Akramul Hoque. Student of programming Hero, Batch-5. I want to be a web developer so I was enrolled this course. This course is teach me how can do hardwork. Without hardworking we cannot achieve anything.
+                        Hi there! I am Md.Akramul Hoque. Student of programming Hero, Batch-5. I want to be a web developer so I was enrolled this course. This course is teach me how can do hardwork. Without hardworkim we cannot achieve anything.
                         I want to be a hard worker and build my skilled here approprietly.So, Next 5 or 6 month I will spend many more time here and do hard work. Also, I will practice javascript, react, html ,css, bootstrap, tailwind, and   complete this course fully to achieve my goal.
 
                         </p>
