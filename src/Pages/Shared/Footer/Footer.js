@@ -5,11 +5,9 @@ const Footer = () => {
         const today = new Date() ;
         const year = today.getFullYear()
         return (
-                <footer >
-                      <div>
-                     <span className='footer'> <p className='text-center'> @Copyright.All the Reserved Gym with Orinius Akram {year} </p></span>
-                      </div>
-                </footer>
+                <div className="footer">
+                <p>@ Copyright All the Reserved to Trainer orinius akram {year}</p>
+                 </div>
         );
 };
 

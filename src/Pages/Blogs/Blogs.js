@@ -4,7 +4,7 @@ const Blgos = () => {
           return (
                     <div>
                           <h2 className='text-center text-danger mt-5'>This is Blogs</h2> 
-            <div className='px-5 mt-5'>
+            <div className='px-5 my-5'>
                   
               <h3> 1.  Authentication vs Authorization   </h3>    
 
@@ -38,7 +38,7 @@ const Blgos = () => {
 </p>
 
 
-<h3>3. Firebase Services other than Authentication</h3>
+<h3>3. Firebase Services other than Authentication:</h3>
 <p>
     <ul>
           <li>Cloud Functions</li>

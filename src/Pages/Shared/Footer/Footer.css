@@ -1,8 +1,12 @@
-.footer p{
-
-  background-color: rgb(35, 33, 33);
-  padding: 30px;
-
-color: white;
-        
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(29, 27, 27);
+  color: rgb(253, 246, 246);
+  text-align: center;
+ padding-bottom: 5px;
+ 
+  
 }
