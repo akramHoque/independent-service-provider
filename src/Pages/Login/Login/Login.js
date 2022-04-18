@@ -31,9 +31,12 @@ const Login = () => {
                 navigate(from, { replace: true });
             }
 
+            // showing error
             if (error) {
                 errorMessage = <p className='text-danger'>Error: {error?.message}</p>
             }
+
+            // reset password
             const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(
                 auth
               );
@@ -48,6 +51,7 @@ const Login = () => {
                 navigate('/register')
         }
 
+        // handle form with email and password
 
         const hanldeSubmit = event =>{
                 event.preventDefault();

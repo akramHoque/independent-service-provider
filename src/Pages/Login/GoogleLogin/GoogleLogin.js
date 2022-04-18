@@ -9,6 +9,7 @@ const GoogleLogin = () => {
  const navigate = useNavigate() ;
 let errorMessage ;
 
+// showing error message
  if (error) { 
        errorMessage =   
         <div>

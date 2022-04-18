@@ -23,12 +23,13 @@ const Register = () => {
          if(user){
                  navigate('/home') ;
          }
+         // showing error message
 
          if (error) {
           errorMessage = <p className='text-danger'>Error: {error?.message}</p>
       }
 
-
+      // create an user with email and password
         const handleRegister = event => {
                 event.preventDefault() ;
                 const name = event.target.name.value;

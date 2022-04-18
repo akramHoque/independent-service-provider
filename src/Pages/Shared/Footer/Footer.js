@@ -1,11 +1,14 @@
 import React from 'react';
+import './Footer.css' ;
 
 const Footer = () => {
         const today = new Date() ;
         const year = today.getFullYear()
         return (
                 <footer >
-                        <p className='text-center text-seconday mt-3 '> @Copyright.All the reserved gym with Adams {year} </p>
+                      <div>
+                     <span className='footer'> <p className='text-center'> @Copyright.All the Reserved Gym with Orinius Akram {year} </p></span>
+                      </div>
                 </footer>
         );
 };
