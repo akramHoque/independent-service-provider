@@ -6,7 +6,7 @@ const Blgos = () => {
                           <h2 className='text-center text-danger mt-5'>This is Blogs</h2> 
             <div className='px-5 my-5'>
                   
-              <h3> 1.  Authentication vs Authorization   </h3>    
+              <h3> 1. Authentication vs Authorization   </h3>    
 
 <h4>Authentication</h4>
 
@@ -26,14 +26,14 @@ const Blgos = () => {
 <h3>Other options of Authentication:</h3> 
 <p>
     <ol>
-          <li>Multi Factor Authentication</li>
-          <li>Certificate-based Authentication</li>
-          <li>Biometric Authentication</li>
-          <li>Face recognition</li>
-          <li>Fingerprint scanners</li>
-          <li>speaker recognition</li>
-          <li>Eye scanners</li>
-          <li>Token-based Authentication</li>
+          <li>Multi Factor Authentication.</li>
+          <li>Certificate-based Authentication.</li>
+          <li>Biometric Authentication.</li>
+          <li>Face recognition.</li>
+          <li>Fingerprint scanners.</li>
+          <li>speaker recognition.</li>
+          <li>Eye scanners.</li>
+          <li>Token-based Authentication.</li>
     </ol>
 </p>
 
